@@ -69,6 +69,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   config.active_job.queue_adapter = :solid_queue
+  config.solid_queue.use_skip_locked = false
   # config.active_job.queue_name_prefix = "study_solid_queue_production"
 
   config.action_mailer.perform_caching = false
